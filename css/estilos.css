@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDEDEE; font-family: 'Roboto', sans-serif;
+    color:black
+}
+
+header { 
+    background-color: #E6621F;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 50%;
+    padding-left: 40px;
+}
+
+h1 {
+    display: none;
+}
+
+nav ul li {
+    padding: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    text-decoration: none; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: all 0s;
+}
+/*TRANSICION*/
+nav ul li a:hover {
+    font-size: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    margin-top: 20px;
+    background-color: #E6621F;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9);
+    padding-bottom: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+footer p {
+    width: 500px;
+    margin-left: 20px;
+}
+
+footer div div {
+    width: 300px;
+    height: 60px;
+}
+
+
+
+/* ESTILOS GENERALES APLICABLE A TODO EL SITIO*/
+
+.colorFondo {
+    background-color: #f19262;
+}
+
+/* estilo general*/
+.negrita {
+    font-weight: bold; 
+}
+
+/* estilo general*/
+.textoMediano {
+    font-size: 20px;
+}
+
+/* estilo general*/
+.centrarTexto {
+    text-align: center;
+}
+
+/*padding general*/
+.paddingBottom {
+    padding-bottom: 20px;
+}
+
+.paddingIzq {
+    padding-left: 10px;
+}
+
+/*margen arriba general*/
+.margen {
+    margin-top: 30px;
+}
+
+/*margen abajo general*/
+.margenAbajo {
+    margin-bottom: 20px;
+}
+
+/*margen general*/
+.margenTodo {
+    margin: 20px;
+}
+
+/*bordes general*/
+.bordes {
+    border: solid;
+}
+
+.borderRedondos {
+    border-radius: 10px;
+}
+
+
+
+/*EXCLUSIVO PAGINA INICIO */
+/*imagen destacada en inicio*/
+.imagenInicio {
+    background-image: url("../imgs/mac-min.jpg") ;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+/*para parrafo destacado en inicio*/
+.imagenInicio p {
+    font-size: xx-large;
+    color: #f3844c;
+    background-color: rgb(46, 44, 44);
+    opacity: 0.96;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 60%;
+    font-weight: bold;
+}
+/*para Nuestros Serivios Destacado en inicio */
+.ubicacionDestacado {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/*EXLUSIVO PAGINA NOSOTROS*/
+
+.tamanioNosotros {
+    width: 800px;
+    padding-right: 30px;
+}
+
+.ordenConocenos {
+    padding-left:20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*EXLUSIVO PAGINA SERVICIOS*/
+
+/*tamaño y ubicacion de los tipos de servicios ofrecidos*/
+.tiposTamanios {
+    flex-basis: 200px;
+    height: 350px;
+}
+
+.tiposFlex {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+/*packs a contratar*/
+
+.packGrid {
+    background-image: url("../imgs/computadora-min.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+article {
+    background-color:#EDEDEE ;
+    opacity: 0.8;
+    border: solid;
+    border-radius: 10px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+
+
+/* EXCLUSIVO PAGINA CONTACTO*/
+/*formulario con FLEX*/
+.contenedorContacto { background-image: url(../imgs/celular.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 125vh;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: center;
+    width: 35%;
+    height: 120vh;
+    border: solid;
+    border-radius: 10px;
+    background-color: #da6d36;
+    opacity: 0.8;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* ANIMACION */
+
+@keyframes efecto {
+0% { 
+    transform: translate(-800px);
+}
+100% { transform: translate(0px);
+}
+}
+
+.key {
+    animation-name: efecto;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.24,.41,.14,.92);
+}
+
+
+
+
+/*RESPONSIVE*/
+
+/*SMARTPHONE*/
+@media (max-width: 428px) {
+/*General*/
+    .smartNo {
+        display: none;
+    }
+
+/*Inicio*/
+    .imagenInicio {
+        height: 20vh;
+    }
+
+    .imagenInicio p {
+        font-size: 15px;
+        text-transform: uppercase;
+        width: 70%;
+    }
+/*Contacto*/
+    .contenedorContacto { 
+        height: 120vh;
+    }
+    form {
+        width: 100%;
+        height: 100vh;
+    }
+
+/*Servicios*/
+    .tiposTamanios {
+        font-size: 10px;
+        height: 250px;
+}
+    h3 {
+        font-size: small;
+    }
+    .tamanioIconos {
+        width: 75%;
+    }
+
+    .packGrid {
+        height: 70vh;
+    }
+
+    article {
+        font-size: 10px;
+    }
+
+}
+
+
+/*TABLET*/
+@media (min-width: 429px) and (max-width:1023px) {
+/*General*/
+    .tabletNo {
+        display: none;
+    }
+
+/*Inicio*/
+    .imagenInicio {
+        height: 50vh;
+    }
+
+    .imagenInicio p {
+        font-size: 25px;
+        text-transform: uppercase;
+        width: 80%;
+    }
+/*Contacto*/
+   .contenedorContacto { 
+        height: 120vh;
+}
+    form {
+        width: 60%;
+        height: 100vh;
+}
+
+/*Servicios*/
+    .tiposTamanios {
+        font-size: 13px;
+}
+    h3 {
+        font-size: small;
+    }
+
+    .packGrid {
+        height: 70vh;
+    }
+
+    article {
+        font-size: small;
+    }
+
+}
